@@ -22,7 +22,8 @@ public class Cliente implements Serializable {
 
 	private String nome;
 	private String cpfouCnpj;
-	private Integer tipo;
+	
+	
 
 	@Column(unique = true)
 	private String email;
