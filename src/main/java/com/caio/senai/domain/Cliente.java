@@ -12,6 +12,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.caio.senai.domain.enuns.TipoCliente;
+
 @Entity
 public class Cliente implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -36,7 +38,7 @@ public class Cliente implements Serializable {
 
 	}
 
-	public Cliente(Integer idCliente, String nome, String cpfouCnpj, String email, Set<String> telefones) {
+	public Cliente(Integer idCliente, String nome, String cpfouCnpj, String email, TipoCliente pessoafisica) {
 		super();
 		this.idCliente = idCliente;
 		this.nome = nome;
